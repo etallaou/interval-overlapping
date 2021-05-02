@@ -3,17 +3,16 @@ eine Funktion MERGE die eine Liste von Intervallen entgegennimmt und als Ergebni
 zurückgibt. Im Ergebnis sollen alle sich überlappenden Intervalle gemerged sein. 
 Alle nicht überlappenden Intervalle bleiben unberührt.
 
-# Bearbeitungszeit:
+## Bearbeitungszeit:
 1 Tag
 
-# Test
+## Test
 ```
 python -m doctest -v src/app.py
 ```
 
 
-# how to start
-## without docker
+## how to start without docker
 ```
 python src/app.py <interval> <interval> <interval> 
 python src/app.py [25,30] [2,19] [14,23] [8,6]
@@ -58,6 +57,8 @@ Exception.
 unteren Grenze des nächsten Intervalls zu vergleichen. Allerdings kann es sein, dass nach einem Update von python diese 
 Methode nicht mehr funktioniert. Aus diesem Grund ist es notwendig, die Tests vor der Verwendung des Programms durchzuführen.
 Weitere Testfälle könnten hinzugefügt werden.
+
+* wir müssen noch definieren, wie wir Daten empfangen, denn auch Python hat seine Grenzen, um Daten wie Args zu empfangen.
 
 ## Wie verhält sich der Speicherverbrauch ihres Programms ?
 je mehr Intervalle getestet werden, desto mehr Speicher wird verwendet, je mehr Intervalle sich überlappen, desto mehr 
